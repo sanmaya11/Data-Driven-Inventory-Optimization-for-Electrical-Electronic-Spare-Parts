@@ -1,0 +1,64 @@
+-- Parts, sites, BOM meta
+CREATE TABLE parts_master (
+  part_id           VARCHAR(40) PRIMARY KEY,
+  part_name         VARCHAR(120),
+  family            VARCHAR(60),           -- e.g., PCB, Motor, Sensor
+  unit_cost         DECIMAL(12,2),
+  lead_time_days    INT,
+  repairable_flag   BOOLEAN,
+  shelf_life_days   INT NULL
+);
+
+CREATE TABLE sites (
+  site_id           VARCHAR(20) PRIMARY KEY,
+  site_type         VARCHAR(20) CHECK (site_type IN ('CDC','RDC','SC')), -- central, regional, service center
+  region            VARCHAR(40)
+);
+
+-- Installed base / cohorts
+CREATE TABLE population_in_field (
+  product_model     VARCHAR(60),
+  cohort_month      DATE,                  -- first day of month installed
+  active_units      INT,
+  region            VARCHAR(40)
+);
+
+-- Failure events
+CREATE TABLE failures (
+  failure_id        BIGINT PRIMARY KEY,
+  part_id           VARCHAR(40) REFERENCES parts_master(part_id),
+  product_model     VARCHAR(60),
+  serial_no         VARCHAR(60),
+  install_date      DATE,
+  failure_date      DATE,
+  site_id           VARCHAR(20) REFERENCES sites(site_id),
+  failure_mode      VARCHAR(120)
+);
+
+-- Ops & inventory
+CREATE TABLE inventory_snapshots (
+  site_id           VARCHAR(20) REFERENCES sites(site_id),
+  part_id           VARCHAR(40) REFERENCES parts_master(part_id),
+  snap_date         DATE,
+  on_hand           INT,
+  on_order          INT,
+  PRIMARY KEY (site_id, part_id, snap_date)
+);
+
+CREATE TABLE service_orders (
+  order_id          BIGINT PRIMARY KEY,
+  site_id           VARCHAR(20) REFERENCES sites(site_id),
+  part_id           VARCHAR(40) REFERENCES parts_master(part_id),
+  request_date      DATE,
+  fulfill_date      DATE NULL,
+  stockout_flag     BOOLEAN
+);
+
+-- Optional: engineering reliability priors (MTBF or Weibull params)
+CREATE TABLE reliability_priors (
+  part_id           VARCHAR(40) REFERENCES parts_master(part_id),
+  model_type        VARCHAR(20) CHECK (model_type IN ('exponential','weibull')),
+  mtbf_days         DECIMAL(10,2) NULL,     -- if exponential
+  k_shape           DECIMAL(8,4) NULL,      -- if weibull
+  eta_scale         DECIMAL(10,4) NULL
+);
