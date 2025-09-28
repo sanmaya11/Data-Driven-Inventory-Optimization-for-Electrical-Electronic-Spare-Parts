@@ -1,0 +1,101 @@
+part_id,part_name,family,unit_cost,lead_time_days
+P001,Pressure Sensor 001,Sensor,97,7
+P002,Inverter PCB 002,PCB,2142,56
+P003,Display PCB 003,PCB,7684,27
+P004,Power Supply Board 004,PCB,3538,25
+P005,Induction Motor 005,Motor,4532,33
+P006,Logic Board 006,PCB,5655,57
+P007,Fuse Module 007,Electrical,2199,11
+P008,IGBT Module 008,Electrical,103,31
+P009,IGBT Module 009,Electrical,2687,11
+P010,Power Relay 010,Electrical,1210,21
+P011,NTC Sensor 011,Sensor,566,19
+P012,Flow Sensor 012,Sensor,420,17
+P013,Main Control PCB 013,PCB,6542,32
+P014,Induction Motor 014,Motor,5753,23
+P015,NTC Sensor 015,Sensor,210,18
+P016,IGBT Module 016,Electrical,1534,21
+P017,Main Control PCB 017,PCB,4043,34
+P018,Fuse Module 018,Electrical,2720,13
+P019,Contactor 019,Electrical,1864,13
+P020,NTC Sensor 020,Sensor,274,7
+P021,Main Control PCB 021,PCB,3767,25
+P022,Inverter PCB 022,PCB,7945,37
+P023,Flow Sensor 023,Sensor,318,11
+P024,Flow Sensor 024,Sensor,503,17
+P025,Induction Motor 025,Motor,5508,30
+P026,Contactor 026,Electrical,393,11
+P027,Driver PCB 027,PCB,7821,41
+P028,Temp Sensor 028,Sensor,434,8
+P029,Driver PCB 029,PCB,6382,37
+P030,Induction Motor 030,Motor,5918,28
+P031,Display PCB 031,PCB,6813,46
+P032,Temp Sensor 032,Sensor,299,12
+P033,Driver PCB 033,PCB,4461,21
+P034,Fuse Module 034,Electrical,1335,33
+P035,Logic Board 035,PCB,7339,51
+P036,Fuse Module 036,Electrical,1988,11
+P037,Servo Motor 037,Motor,4778,29
+P038,NTC Sensor 038,Sensor,600,17
+P039,NTC Sensor 039,Sensor,673,18
+P040,Servo Motor 040,Motor,5482,27
+P041,Power Relay 041,Electrical,132,17
+P042,Hall Sensor 042,Sensor,103,10
+P043,Servo Motor 043,Motor,4359,27
+P044,Induction Motor 044,Motor,3551,27
+P045,Inverter PCB 045,PCB,5081,24
+P046,Logic Board 046,PCB,7121,37
+P047,Logic Board 047,PCB,3455,33
+P048,Pressure Sensor 048,Sensor,364,7
+P049,Inverter PCB 049,PCB,5983,20
+P050,Inverter PCB 050,PCB,1781,56
+P051,Servo Motor 051,Motor,3789,38
+P052,IGBT Module 052,Electrical,429,15
+P053,Circulation Pump 053,Pump,1493,28
+P054,NTC Sensor 054,Sensor,550,10
+P055,Contactor 055,Electrical,1867,8
+P056,Inverter PCB 056,PCB,6366,27
+P057,Power Relay 057,Electrical,2966,30
+P058,Contactor 058,Electrical,2078,24
+P059,Induction Motor 059,Motor,3539,44
+P060,Main Control PCB 060,PCB,7008,53
+P061,IGBT Module 061,Electrical,2048,19
+P062,Contactor 062,Electrical,311,21
+P063,Driver PCB 063,PCB,6321,55
+P064,IGBT Module 064,Electrical,170,20
+P065,Servo Motor 065,Motor,5032,38
+P066,Induction Motor 066,Motor,5937,24
+P067,Induction Motor 067,Motor,5465,30
+P068,Power Relay 068,Electrical,2292,26
+P069,Temp Sensor 069,Sensor,777,7
+P070,IGBT Module 070,Electrical,2271,30
+P071,Fuse Module 071,Electrical,1587,21
+P072,Logic Board 072,PCB,3423,24
+P073,Flow Sensor 073,Sensor,129,14
+P074,Servo Motor 074,Motor,3763,21
+P075,BLDC Motor 075,Motor,3777,31
+P076,Hall Sensor 076,Sensor,299,16
+P077,Contactor 077,Electrical,1675,28
+P078,BLDC Motor 078,Motor,4170,43
+P079,Servo Motor 079,Motor,5895,23
+P080,Inverter PCB 080,PCB,2281,46
+P081,Power Relay 081,Electrical,692,8
+P082,Circulation Pump 082,Pump,933,18
+P083,Drain Pump 083,Pump,2196,22
+P084,Inverter PCB 084,PCB,5176,31
+P085,Logic Board 085,PCB,6802,47
+P086,Contactor 086,Electrical,2521,28
+P087,Fuse Module 087,Electrical,2021,23
+P088,Driver PCB 088,PCB,7914,34
+P089,Hall Sensor 089,Sensor,292,11
+P090,Hall Sensor 090,Sensor,606,15
+P091,Fuse Module 091,Electrical,301,34
+P092,Power Supply Board 092,PCB,5692,27
+P093,NTC Sensor 093,Sensor,170,7
+P094,Hall Sensor 094,Sensor,672,19
+P095,Logic Board 095,PCB,1772,27
+P096,Logic Board 096,PCB,1947,41
+P097,Door Switch 097,Electrical,1970,18
+P098,Contactor 098,Electrical,2325,29
+P099,Induction Motor 099,Motor,3349,30
+P100,Induction Motor 100,Motor,5193,38
